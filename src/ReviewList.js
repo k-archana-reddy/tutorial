@@ -12,10 +12,11 @@ function ReviewList({ reviews }) {
                 </div>
                 <div className="review-text">
                     <h3>{review.name}</h3>
-                    <p>{review.comment}</p>
+                    <p dangerouslySetInnerHTML={{ __html: highlightWord({review.comment}, 'dolor') }} />
+
                 </div>
             </div>
-          </div>
+        </div>
       ))}
     </div>
   );
