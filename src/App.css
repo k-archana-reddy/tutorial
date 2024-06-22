@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-style: solid none;
-    height: 630px;
+    height: 640px;
     border-color: rgb(238, 235, 235);
     padding: 30px;
     font-family: 'sans-serif', 'Arial';
@@ -10,10 +10,10 @@
 
 .info{
     position: relative;
-    top : 100px;
+    top: 150px;
     border: none;
     width: 500px;
-    left: 30px;
+    left: 70px;
     height: 500px;
 }
 
@@ -53,28 +53,61 @@ button{
     border: none;
     margin-top: 30px;
     margin-left: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
 }
 .review-container{
     position: relative;
-    top : 100px;
+    top: 95px;
     border: none;
-    height: 400px;
-    overflow-y: auto;
-    scrollbar-color: #66CDAA #E5E4E2;
-    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+    width: 100%; 
+}
+
+.review-container::-webkit-scrollbar { 
+    width: 12px; 
+} 
+
+.review-container::-webkit-scrollbar-track { 
+    background: rgb(238, 235, 235); 
+    border-radius: 10px;
+} 
+
+.review-container::-webkit-scrollbar-thumb { 
+    background: #66CDAA; 
+    border-radius: 10px;
+} 
+
+.review-container::-webkit-scrollbar-thumb:hover { 
+    background: #66CDAA; 
+} 
+
+.review-container::-webkit-scrollbar-button { 
+    display: none; 
+}
+  
+
+
+.block{
+    background-color: rgb(238, 235, 235);
 }
 
 .review-item {
-  position: relative; 
-  margin-bottom: 20px;
-  padding: 10px;
+  position: relative;
+  margin-bottom: 35px;
+  padding: 12px;
   background-color: #fff;
+  border: 4px solid rgb(238, 235, 235);
+  border-left: 8px solid rgb(238, 235, 235);
   transition: transform 0.3s ease; 
-  margin-left: 90px;
+  margin-left: 110px;
+  margin-right: 60px;
 }
 
 .review-item:hover {
-  transform: translateX(-80px);
+  transform: translateX(-100px);
+  border-left: 8px solid #F08080;
 }
 
 .review-content {
@@ -82,7 +115,7 @@ button{
   align-items: center;
 }
 
-.review-image {
+.reviewr-image {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -94,12 +127,13 @@ button{
 }
 
 h3 {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 p {
 margin: 0;
 color: #666;
 }
+
   
   

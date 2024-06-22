@@ -7,12 +7,12 @@ function ReviewList({ reviews }) {
       {reviews.map((review) => (
         <div key={review.id} className="review-item">
             <div className="review-content">
-                <div className="reviewr-image">
-                    <img src={review.image} alt={review.name} />    
+                <div>
+                    <img src={review.image} alt={review.name} className="reviewr-image"/>    
                 </div>
                 <div className="review-text">
                     <h3>{review.name}</h3>
-                    <p dangerouslySetInnerHTML={{ __html: highlightWord({review.comment}, 'dolor') }} />
+                    <p>{review.comment}</p>
 
                 </div>
             </div>
