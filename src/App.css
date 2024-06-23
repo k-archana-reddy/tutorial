@@ -103,6 +103,7 @@ button{
   transition: transform 0.3s ease; 
   margin-left: 110px;
   margin-right: 60px;
+  cursor: pointer;
 }
 
 .review-item:hover {
@@ -115,7 +116,7 @@ button{
   align-items: center;
 }
 
-.reviewr-image {
+.reviewer-image {
   width: 70px;
   height: 70px;
   border-radius: 50%;

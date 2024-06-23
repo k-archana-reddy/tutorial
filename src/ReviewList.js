@@ -8,7 +8,7 @@ function ReviewList({ reviews }) {
         <div key={review.id} className="review-item">
             <div className="review-content">
                 <div>
-                    <img src={review.image} alt={review.name} className="reviewr-image"/>    
+                    <img src={review.image} alt={review.name} className="reviewer-image"/>    
                 </div>
                 <div className="review-text">
                     <h3>{review.name}</h3>
